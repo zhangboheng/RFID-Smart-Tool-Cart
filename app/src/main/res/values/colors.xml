@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_background">#0A1F56</color>
+    <color name="user_icon">#204697</color>
+    <color name="item_btn">#043667</color>
+    <color name="item_clicked">#022544</color>
+    <color name="purple_200">#BB86FC</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="teal_700">#018786</color>
+    <color name="red">#FF0000</color>
+    <color name="black">#000000</color>
+    <color name="color_black_shadow">#80000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="whiteOpacity">#80FFFFFF</color>
+    <!-- Primary and secondary colors -->
+    <color name="colorPrimary">#0D1B2A</color>
+    <color name="colorPrimaryDark">#1B263B</color>
+    <color name="colorAccent">#415A77</color>
+    <!-- Custom deep space blue color definitions -->
+    <color name="colorPrimaryVariant">#1B263B</color>
+    <color name="colorOnPrimary">#E0E1DD</color>
+    <color name="colorSecondary">#778DA9</color>
+    <color name="colorOnSecondary">#E0E1DD</color>
+    <color name="button_gray">#999999</color>
+    <color name="selected_text">#FFFFFF</color>
+    <color name="unselected_text">#B0BEC5</color>
+    <color name="content_text_light">#ffcccccc</color>
+    <color name="transparent">#00000000</color>
+</resources>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserControl">
+
+    <!-- 半透明背景覆盖层 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000" />
+
+    <!-- 顶部通栏 -->
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        android:padding="16dp">
+
+        <!-- 返回按钮 -->
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:contentDescription="@string/return_previous"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/user_control"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <!--搜索和添加功能区-->
+    <RelativeLayout
+        android:id="@+id/rl_search"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="80dp"
+        android:background="@color/black">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="180dp"
+            android:background="@drawable/bg_home_search_edittext"
+            android:gravity="center_vertical|end"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true">
+
+            <EditText
+                android:id="@+id/et_fragment_search"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_marginStart="16dp"
+                android:autofillHints=""
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/input_name"
+                android:imeOptions="actionSearch"
+                android:inputType=""
+                android:singleLine="true"
+                android:textColor="@color/content_text_light"
+                android:textSize="18sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="16dp"
+                android:contentDescription="@string/search"
+                android:src="@mipmap/img_search" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_add"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@mipmap/img_add"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="96dp"
+            android:layout_centerVertical="true"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/mutal_tv_add"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@mipmap/import_image"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:layout_centerVertical="true"
+            android:gravity="center" />
+    </RelativeLayout>
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/rv_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_search"
+        android:background="@color/transparent"
+        android:paddingHorizontal="20dp"
+        android:paddingBottom="20dp">
+    </com.jcodecraeer.xrecyclerview.XRecyclerView>
+
+    <TextView
+        android:id="@+id/tv_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/no_data"
+        android:textSize="36sp"
+        android:textColor="@color/button_gray"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        app:drawableTopCompat="@mipmap/img_no_data" />
+</RelativeLayout>

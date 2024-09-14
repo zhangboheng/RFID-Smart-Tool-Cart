@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-feature android:name="android.hardware.usb.host" />
+    <uses-permission android:name="android.permission.MANAGE_USB"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.USB_PERMISSION" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <!-- 接收启动完成的广播权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <application
+        android:requestLegacyExternalStorage="true"
+        android:name=".ArcFaceApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/home_title"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.keyadministrator"
+        tools:targetApi="31"
+        tools:replace="android:label">
+        <receiver
+            android:name=".BootCompleteReceiver"
+            android:enabled="true"
+            android:exported="true">
+
+            <!--接收启动完成的广播-->
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+
+        </receiver>
+        <!-- 保留 MainActivity，作为启动的 activity -->
+        <activity android:name=".MainActivity"
+            android:launchMode="singleTop"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 物品统计页面 -->
+        <activity android:name=".GoodTotalActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:exported="true">
+        </activity>
+        <!-- 物品储存页面 -->
+        <activity android:name=".GoodStoreActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:exported="true">
+        </activity>
+        <!-- 已借出页面 -->
+        <activity android:name=".GoodLendActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:exported="true">
+        </activity>
+        <!-- 登录选择页面 -->
+        <activity android:name=".LoginSelectActivity"
+            android:exported="true">
+        </activity>
+        <!-- 登录页面 -->
+        <activity android:name=".LoginActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:exported="true">
+        </activity>
+        <!-- 刷卡登录页面 -->
+        <activity android:name=".CardLoginActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="true">
+        </activity>
+        <!-- 虹软Demo页面 -->
+        <activity android:name=".ui.activity.HomeActivity"
+            android:exported="true">
+        </activity>
+        <!-- 菜单选择页面 -->
+        <activity android:name=".MenuListActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:exported="true">
+        </activity>
+        <!-- 激活人脸组件 -->
+        <activity android:name=".ui.activity.ActivationActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:exported="true">
+        </activity>
+        <!-- 注册人脸识别 -->
+        <activity
+            android:name=".ui.activity.RegisterAndRecognizeActivity"
+            android:theme="@style/FullScreenTheme"
+            android:exported="true"/>
+        <!-- 活体检测识别 -->
+        <activity
+            android:name=".ui.activity.LivenessDetectActivity"
+            android:theme="@style/FullScreenTheme"
+            android:exported="true"/>
+        <!-- 摄像机配置 -->
+        <activity
+            android:name=".ui.activity.CameraConfigureActivity"
+            android:theme="@style/FullScreenTheme"
+            android:exported="true"/>
+        <!-- 计算数据长度 -->
+        <activity
+            android:name=".ui.activity.DataLengthCalculatorActivity"
+            android:label="@string/page_calculate_data_length"
+            android:exported="true"/>
+        <!-- 参数设置 -->
+        <activity
+            android:name=".ui.activity.RecognizeSettingsActivity"
+            android:label="@string/page_settings"
+            android:exported="true"/>
+        <!-- 人脸管理 -->
+        <activity
+            android:name=".ui.activity.FaceManageActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="true">
+        </activity>
+        <!-- 人脸调试 -->
+        <activity
+            android:name=".ui.activity.RecognizeDebugActivity"
+            android:theme="@style/FullScreenTheme"
+            android:exported="true"/>
+        <!-- 图像1:1 -->
+        <activity
+            android:name=".ui.activity.ImageFaceAttrDetectActivity"
+            android:theme="@style/FullScreenTheme"
+            android:exported="true"/>
+        <!-- 人脸对比 -->
+        <activity
+            android:name=".ui.activity.FaceCompareActivity"
+            android:theme="@style/FullScreenTheme"
+            android:exported="true">
+        </activity>
+        <!-- 用户登录借还界面 -->
+        <activity android:name=".UserLoginActivity"
+            android:exported="true">
+        </activity>
+        <!-- 统计总计界面 -->
+        <activity android:name=".GoodUserLendActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:exported="true">
+        </activity>
+        <!-- 用户管理 -->
+        <activity android:name=".UserControl"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:exported="true">
+        </activity>
+        <!-- 用户管理详情 -->
+        <activity android:name=".UserDetailEditActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:exported="true">
+        </activity>
+        <!-- 添加用户 -->
+        <activity android:name=".AddUserActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:exported="true">
+        </activity>
+        <!-- 管理选项 -->
+        <activity android:name=".ControlSettingsActivity"
+            android:exported="true">
+        </activity>
+        <!-- 台账信息 -->
+        <activity android:name=".ItemsInformationActivity"
+            android:exported="true">
+        </activity>
+        <!-- 物品管理 -->
+        <activity android:name=".GoodsControlActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:exported="true">
+        </activity>
+        <!-- 新增物品管理 -->
+        <activity android:name=".AddGoodActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:exported="true">
+        </activity>
+        <!-- 编辑物品管理 -->
+        <activity android:name=".EditGoodActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:exported="true">
+        </activity>
+        <!-- 类别管理 -->
+        <activity android:name=".CategoryControlActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:exported="true">
+        </activity>
+        <!-- 添加类别管理 -->
+        <activity android:name=".CategoryManagementActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:exported="true">
+        </activity>
+        <!-- 编辑类别管理 -->
+        <activity android:name=".CategoryEditActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:exported="true">
+        </activity>
+        <!-- 参数设置 -->
+        <activity android:name=".SerialConfigPageActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:exported="true">
+        </activity>
+        <!-- 关于我们 -->
+        <activity android:name=".AboutUsActivity" />
+        <activity
+            android:name=".BlueActivity"
+            android:exported="true">
+        </activity>
+    </application>
+    <queries>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+    </queries>
+</manifest>

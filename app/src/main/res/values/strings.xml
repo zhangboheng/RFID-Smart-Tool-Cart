@@ -1,0 +1,467 @@
+<resources>
+    <!-- 通用信息 -->
+    <string name="custom">通用</string>
+    <string name="return_previous">返回</string>
+    <string name="search_query">查询</string>
+    <string name="please_wait">请稍等…</string>
+    <string name="ok">确认</string>
+    <string name="delete">删除</string>
+    <string name="cancel">取消</string>
+    <string name="permission_denied">权限被拒绝！</string>
+    <string name="recognize_settings">参数设置</string>
+    <string name="notice">提示</string>
+    <string name="stopped">已停止</string>
+    <string name="stop">停止</string>
+    <string name="menu">菜单</string>
+    <string name="no_data">暂无数据</string>
+    <string name="search">搜索</string>
+    <string name="lend_total">借物总数</string>
+    <string name="beyond_things">超期未还</string>
+    <string name="default_num">0</string>
+    <string name="exit_text">退出</string>
+    <string name="space_line">--</string>
+    <string name="category_index_hint">请输入索引号</string>
+    <string name="category_name_hint">请输入类别名称</string>
+    <string name="category_unit_hint">请输入单位</string>
+    <string name="add">添加</string>
+    <string name="index">索引序号</string>
+    <string name="category">类型名称</string>
+    <string name="unit">类型单位</string>
+    <string name="operation">操作区</string>
+    <string name="action_type">操作行为</string>
+    <string name="goods_name">物品名称</string>
+    <string name="input_goods_name">请输入物品名称</string>
+    <string name="input_rfid_number">请输入物品rfid</string>
+    <string name="overdue">是否超期</string>
+    <string name="company_name">生产厂家</string>
+    <string name="use_life">使用寿命</string>
+    <string name="lend_start_time">借出起始时间</string>
+    <string name="return_end_time">归还截止时间</string>
+    <string name="lend_long_limit">借出时长(天)</string>
+    <string name="if_check">入柜是否检查</string>
+    <string name="belong_cabinet">归属柜子：</string>
+    <string name="belong_cabinet_no">归属柜子</string>
+    <string name="actual_cabinet">实际归属：</string>
+    <string name="actual_cabinet_no">实际归属</string>
+    <string name="important">*</string>
+    <string name="borrow_item">开锁</string>
+    <string name="smart_lock">智能锁参数</string>
+    <string name="smart_tag">智能标签参数</string>
+    <string name="serial_number">串口选择</string>
+    <string name="board_number">波特率选择</string>
+    <string name="current_info">当前挂账信息</string>
+    <string name="lend_total_info">借用统计</string>
+    <string name="return_total_info">归还统计</string>
+    <string name="wrong_total_info">放错信息</string>
+    <string name="detect_info">检测</string>
+    <string name="nothing_detect">无</string>
+    <string name="count_three_time">智能标签检测器未联通或者出现故障，请注意……</string>
+    <string name="smart_meter">智能电表</string>
+    <string name="total_count_things">物品总计</string>
+    <string name="image_text">图片</string>
+    <string name="date">日期</string>
+    <string name="ip_address">IP 地址</string>
+    <string name="port_num">端口</string>
+    <string name="clear">清空</string>
+    <string name="port_data">导入</string>
+
+    <!--配置、功能选择界面-->
+    <string name="page_readme">简介</string>
+    <string name="page_ir_face_recognize">人脸识别</string>
+    <string name="page_liveness_detect">活体检测</string>
+    <string name="page_single_image">人脸属性</string>
+    <string name="page_face_compare">图片1:1比对</string>
+    <string name="page_face_manage">人脸管理</string>
+    <string name="page_settings">参数设置</string>
+    <string name="page_debug">异常分析</string>
+    <string name="page_calculate_data_length">计算数据长度</string>
+
+    <!-- 首页信息 -->
+    <string name="home_title">智能工具车</string>
+    <string name="accessibility_icon_description">管理员</string>
+    <string name="total_things">物品总计</string>
+    <string name="storage_things">库存</string>
+    <string name="lend_things">借出</string>
+    <string name="system_notify">系统通知</string>
+    <string name="over_date">超期未还</string>
+    <string name="item_time">2024–06–20</string>
+    <string name="item_analysis">统计</string>
+    <string name="first_box">1号柜</string>
+    <string name="second_box">2号柜</string>
+    <string name="third_box">3号柜</string>
+    <string name="fourth_box">4号柜</string>
+    <string name="fifth_box">5号柜</string>
+    <string name="detail">详情</string>
+    <string name="edit">修改</string>
+
+    <!-- 登录信息 -->
+    <string name="register_select">登录选择</string>
+    <string name="face_login">人脸登录</string>
+    <string name="password_login">密码登录</string>
+    <string name="card_login">刷卡登录</string>
+
+    <!-- 用户管理 -->
+    <string name="user_control">用户管理</string>
+    <string name="active_face">激活刷脸组件</string>
+    <string name="register_face">注册人脸</string>
+    <string name="face_control">人脸管理</string>
+    <string name="sys_settings">管理设置</string>
+    <string name="about_us">关于我们</string>
+
+    <!-- 用户细节相关 -->
+    <string name="user_detail">用户详情</string>
+    <string name="if_enabled">是否启用</string>
+    <string name="banded_range">禁用时间范围：</string>
+    <string name="start_time">开始时间</string>
+    <string name="end_time">结束时间</string>
+    <string name="cabinet_right">权限：</string>
+    <string name="delete_button">删除</string>
+    <string name="save_button">保存</string>
+
+    <!-- 注册相关 -->
+    <string name="login">登录</string>
+    <string name="account">用户名</string>
+    <string name="password">密码</string>
+    <string name="user_login">用户登录</string>
+    <string name="login_title">登录</string>
+
+    <!-- 错误信息收集界面-->
+    <string name="dump_error_cannot_detect_faces">人脸检测异常</string>
+    <string name="dump_liveness_info">活体识别数据</string>
+    <string name="dump_extract_failed">特征提取异常</string>
+    <string name="dump_recognize_failed">人脸识别失败</string>
+    <string name="dump_performance_info">识别耗时数据</string>
+
+    <!-- 人脸管理-->
+    <string name="tip_no_registered_face">未注册人脸，请点击右下角图标进行注册，\n默认待批量注册图存放目录：%s</string>
+    <string name="please_put_photos">请将需要注册的人脸照片放在\n%s\n目录下</string>
+    <string name="label_face_id">id: %d</string>
+    <string name="dialog_title_change_name">修改名称</string>
+    <string name="name_should_not_be_empty">名称不可为空</string>
+    <string name="register_success">注册成功</string>
+    <string name="register_failed">注册失败</string>
+    <string name="face_cleared">人脸库已清空</string>
+    <string name="face_deleted">已删除</string>
+    <string name="register_select_from_album">选择照片注册</string>
+    <string name="batch_register_from_file">本地批量注册</string>
+    <string name="clear_all_faces">清空所有人脸</string>
+    <string name="registering_please_wait">注册中，请稍等</string>
+    <string name="register_progress">当前/失败/所有：%d / %d / %d</string>
+
+    <!-- 用户添加相关 -->
+    <string name="add_name">添加用户</string>
+    <string name="cabinet_0_permission">管理员权限</string>
+    <string name="cabinet_1_permission">1号柜权限</string>
+    <string name="cabinet_2_permission">2号柜权限</string>
+    <string name="cabinet_3_permission">3号柜权限</string>
+    <string name="cabinet_4_permission">4号柜权限</string>
+    <string name="cabinet_5_permission">5号柜权限</string>
+    <string name="input_name">姓名</string>
+    <string name="input_part">部门</string>
+    <string name="input_phone">手机</string>
+    <string name="input_password">密码</string>
+    <string name="input_cardId">卡号</string>
+    <string name="card_login_in">刷卡登录</string>
+    <string name="read_card">读卡</string>
+    <string name="save_user">注册</string>
+    <string name="exit_register">退出</string>
+
+    <!-- 管理配置相关 -->
+    <string name="config_settings">管理配置</string>
+    <string name="config_select">配置选择</string>
+    <string name="items_information">台账信息</string>
+    <string name="goods_control">物品管理</string>
+    <string name="clarify_control">类别管理</string>
+    <string name="parameter_control">参数管理</string>
+
+    <!-- 激活页面 -->
+    <string name="active_engine">激活引擎</string>
+    <string name="active_success">激活引擎成功</string>
+    <string name="already_activated">已激活</string>
+    <string name="active_key_activated">该激活码已被其他设备使用</string>
+    <string name="dont_need_active_anymore">引擎已激活，无需再次激活</string>
+    <string name="active_failed">引擎激活失败，错误码：%d， 错误码常量名：%s</string>
+    <string name="not_activated">SDK未激活</string>
+    <string name="app_id">appId</string>
+    <string name="sdk_key">sdkKey</string>
+    <string name="active_key">activeKey</string>
+    <string name="active_online">在线激活</string>
+    <string name="active_offline">离线激活</string>
+    <string name="copy_device_finger">复制指纹</string>
+    <string name="description_copy_device_finger">将设备指纹复制到剪贴板，可存储到本地文件，上传到开放平台生成离线授权文件用于离线激活</string>
+    <string name="device_info_copied">设备指纹：\n%s\n已复制</string>
+    <string name="get_device_finger_failed">获取设备指纹失败，错误码：%d</string>
+    <string name="notice_please_active_before_use">SDK未激活，请激活后使用！</string>
+    <string name="read_local_config_and_active">本地激活</string>
+    <string name="notice_active_online">联网环境下，支持在线激活，可读取本地配置文件，本地配置文件路径为：/sdcard/activeConfig.txt，格式：\nAPP_ID:XXXXXXXXXXXXXXX\nSDK_KEY:XXXXXXXXXXXXXXX\nACTIVE_KEY:XXXX-XXXX-XXXX-XXXX</string>
+    <string name="notice_active_offline">无网络环境下，支持离线激活，请将设备授权文件放置在sdcard根目录下，命名为%s</string>
+    <string name="active_file_name">active_result.dat</string>
+    <string name="read_config_failed">读取本地文件失败，请检查格式</string>
+
+    <!--单目、双目识别注册界面-->
+    <string name="register">注册</string>
+    <string name="switch_camera">切换相机</string>
+    <string name="switch_camera_failed">切换相机失败</string>
+    <string name="recognize_failed_notice">未通过:%s</string>
+    <string name="recognize_success_notice">通过:%s</string>
+    <string name="low_confidence_level">人脸置信度低</string>
+    <string name="specific_engine_init_failed">%s 初始化失败，错误码：%d\n错误码常量名：%s</string>
+    <string name="notice_change_detect_degree">相机已切换，若无法检测到人脸，需要在配置界面修改视频模式人脸检测角度</string>
+    <string name="liveness_detect">活体检测</string>
+    <string name="camera_rgb">RGB CAMERA</string>
+    <string name="camera_ir">IR CAMERA</string>
+    <string name="camera_rgb_preview_size">RGB CAMERA\n%dx%d</string>
+    <string name="camera_ir_preview_size">IR CAMERA\n%dx%d</string>
+    <string name="camera_error_notice">\n可能的原因：该设备不支持同时打开两个摄像头</string>
+    <string name="draw_ir_rect_mirror_horizontal">IR人脸框水平镜像绘制</string>
+    <string name="draw_ir_rect_mirror_vertical">IR人脸框垂直镜像绘制</string>
+
+    <!-- 配置的key-->
+    <string name="preference_switch_camera">switch_camera</string>
+    <string name="preference_dual_camera_offset_horizontal">dual_camera_offset_horizontal</string>
+    <string name="preference_dual_camera_offset_vertical">dual_camera_offset_vertical</string>
+    <string name="preference_draw_rgb_rect_horizontal_mirror">draw_rgb_rect_horizontal_mirror</string>
+    <string name="preference_draw_rgb_rect_vertical_mirror">draw_rgb_rect_vertical_mirror</string>
+    <string name="preference_draw_ir_rect_horizontal_mirror">draw_ir_rect_horizontal_mirror</string>
+    <string name="preference_draw_ir_rect_vertical_mirror">draw_ir_rect_vertical_mirror</string>
+    <string name="preference_rgb_preview_horizontal_mirror">rgb_preview_horizontal_mirror</string>
+    <string name="preference_ir_preview_horizontal_mirror">ir_preview_horizontal_mirror</string>
+    <string name="preference_rgb_camera_rotation">rgb_camera_rotation</string>
+    <string name="preference_ir_camera_rotation">ir_camera_rotation</string>
+    <string name="preference_liveness_detect_type">liveness_detect_type</string>
+    <string name="preference_rgb_liveness_detect">rgb_liveness_detect</string>
+    <string name="preference_ir_liveness_detect">ir_liveness_detect</string>
+    <string name="preference_recognize_keep_max_face">keep_max_face</string>
+    <string name="preference_recognize_limit_recognize_area">limit_recognize_area</string>
+    <string name="preference_recognize_max_detect_num">max_detect_num</string>
+    <string name="preference_recognize_scale_value">scale_value</string>
+    <string name="preference_choose_detect_degree">choose_detect_degree</string>
+    <string name="preference_track_face_count">track_face_count</string>
+    <string name="preference_recognize_threshold">recognize_threshold</string>
+    <string name="preference_shelter_threshold">shelter_threshold</string>
+    <string name="preference_eye_open_threshold">eye_open_threshold</string>
+    <string name="preference_mouth_close_threshold">mouth_close_threshold</string>
+    <string name="preference_wear_glasses_threshold">wear_glasses_threshold</string>
+    <string name="preference_recognize_face_size_limit">recognize_face_size_limit</string>
+    <string name="preference_recognize_move_pixel_limit">recognize_move_pixel_limit</string>
+    <string name="preference_rgb_liveness_threshold">rgb_liveness_threshold</string>
+    <string name="preference_ir_liveness_threshold">ir_liveness_threshold</string>
+    <string name="preference_liveness_fq_threshold">liveness_fq_threshold</string>
+    <string name="preference_rgb_liveness_face_size_threshold">rgb_liveness_face_size_threshold</string>
+    <string name="preference_ir_liveness_face_size_threshold">ir_liveness_face_size_threshold</string>
+    <string name="preference_dual_camera_preview_size">dual_camera_preview_size</string>
+    <string name="preference_app_id">app_id</string>
+    <string name="preference_sdk_key">sdk_key</string>
+    <string name="preference_active_key">active_key</string>
+    <string name="preference_enable_image_quality_detect">enable_image_quality_detect</string>
+    <string name="preference_enable_face_size_limit">enable_face_size_limit</string>
+    <string name="preference_enable_face_move_limit">enable_face_move_limit</string>
+    <string name="preference_image_quality_no_mask_recognize_threshold">image_quality_no_mask_recognize_threshold</string>
+    <string name="preference_image_quality_no_mask_register_threshold">image_quality_no_mask_register_threshold</string>
+    <string name="preference_image_quality_mask_recognize_threshold">image_quality_mask_recognize_threshold</string>
+
+    <!-- 图像大小计算-->
+    <string name="notice_input_width">请输入图像宽度</string>
+    <string name="large_resolution_not_recommended">不推荐使用过大分辨率的图像</string>
+    <string name="width_must_be_multiple_of_4">宽度必须是4的倍数</string>
+    <string name="notice_input_height">请输入图像高度</string>
+    <string name="calculate">计算</string>
+    <string name="image_width">图像宽度</string>
+    <string name="image_height">图像高度</string>
+    <string name="threshold_value_illegal">阈值非法</string>
+    <string name="interger_value_illegal">数值非法</string>
+
+    <!-- 配置的VALUE -->
+    <string name="value_liveness_type_rgb">rgb_liveness</string>
+    <string name="value_liveness_type_ir">ir_liveness</string>
+    <string name="value_liveness_type_disable">disable_liveness</string>
+
+    <!-- 活体配置 -->
+    <string name="description_rgb_liveness_detect">单目活体检测</string>
+    <string name="description_ir_liveness_detect">双目活体检测</string>
+    <string name="description_disable_liveness_detect">不启用活体检测</string>
+
+    <!-- 默认项-->
+    <string name="default_recognize_orient_priority">ASF_OP_ALL_OUT</string>
+
+    <!--各个界面引擎初始化失败的提示-->
+    <string name="init_failed">引擎初始化失败，错误码为：%d，错误码常量名为：%s</string>
+    <string name="engine_not_initialized">引擎未初始化，错误码为 %d</string>
+
+    <!--各个界面获取本地图片失败提示-->
+    <string name="get_picture_failed">获取图片失败</string>
+
+    <!--人脸比对1:n（图片vs图片） 界面-->
+    <string name="choose_main_image">选择注册照</string>
+    <string name="add_item_image">添加识别照</string>
+    <string name="notice_choose_main_img">请先选择注册照</string>
+    <string name="notice_register_image_no_mask">注册照要求不戴口罩</string>
+    <string name="compare_failed">比对失败，错误码为 %d</string>
+
+    <!-- 识别相关的配置项-->
+    <string name="title_choose_detect_degree">选择视频模式检测角度</string>
+    <string name="title_liveness_detect_type">活体检测模式</string>
+    <string name="title_rgb_threshold">可见光活体检测阈值</string>
+    <string name="title_ir_threshold">红外活体检测阈值</string>
+    <string name="title_liveness_fq_threshold">活体中图像质量检测阈值</string>
+    <string name="title_rgb_liveness_face_size">可见光活体中模型选择界限</string>
+    <string name="title_ir_liveness_face_size">红外活体中模型选择界限</string>
+    <string name="title_recognize_face_count_limit">同屏识别人脸数限制</string>
+    <string name="title_max_detect_face_num">识别界面最大人脸检测数量</string>
+    <string name="title_recognize_scale_value">识别时的最小人脸占比（图像长边 / 人脸宽度）</string>
+    <string name="title_recognize_area_limit">识别区域限制</string>
+    <string name="title_recognize_threshold">识别阈值</string>
+    <string name="title_recognize_face_side_length_limit">人脸大小限制(px)</string>
+    <string name="title_recognize_face_move_pixel_limit">人脸上下帧移动像素数限制</string>
+    <string name="title_shelter_threshold">遮挡阈值</string>
+    <string name="title_eye_open_threshold">眼睛开启阈值</string>
+    <string name="title_mouth_close_threshold">嘴巴闭合阈值</string>
+    <string name="title_wear_glasses_threshold">戴眼镜阈值</string>
+    <!-- 相机适配相关的配置项-->
+    <string name="title_rgb_preview_additional_rotation">可见光预览额外旋转角度</string>
+    <string name="title_ir_preview_additional_rotation">红外预览额外旋转角度</string>
+    <string name="title_draw_rect_adaptation">人脸框绘制适配</string>
+    <string name="title_dual_camera_data_offset">双目偏移（基于图像，而非View）</string>
+    <string name="title_dual_camera_data_offset_horizontal">双目水平偏移像素</string>
+    <string name="title_dual_camera_data_offset_vertical">双目垂直偏移像素</string>
+    <string name="title_camera_preview_adaption">相机预览适配</string>
+    <string name="title_mirror_draw_rgb_rect_horizontal">水平镜像绘制可见光人脸框</string>
+    <string name="title_mirror_draw_rgb_rect_vertical">垂直镜像绘制可见光人脸框</string>
+    <string name="title_mirror_draw_ir_rect_horizontal">水平镜像绘制红外人脸框</string>
+    <string name="title_mirror_draw_ir_rect_vertical">垂直镜像绘制红外人脸框</string>
+    <string name="title_rgb_preview_horizontal_mirror">可见光数据预览</string>
+    <string name="title_ir_preview_horizontal_mirror">红外数据预览</string>
+    <string name="title_switch_camera">切换相机</string>
+    <string name="title_dual_camera_preview_size">双目分辨率</string>
+    <string name="title_image_quality_no_mask_recognize_threshold">图像质量阈值：不戴口罩，人脸识别场景</string>
+    <string name="title_image_quality_no_mask_register_threshold">图像质量阈值：不戴口罩，人脸注册场景</string>
+    <string name="title_image_quality_mask_recognize_threshold">图像质量阈值：戴口罩，人脸识别场景</string>
+
+
+    <string name="description_recognize_keep_max_face">仅识别最大的人脸</string>
+    <string name="description_recognize_not_keep_max_face">同时识别多个人脸</string>
+    <string name="description_recognize_no_area_limited">不限制识别区域</string>
+    <string name="description_recognize_area_limited">限制识别区域</string>
+    <string name="description_draw_mirror">镜像绘制</string>
+    <string name="description_draw_origin">原始绘制</string>
+    <string name="description_camera_0_ir_1_rgb">0:IR, 1:RGB</string>
+    <string name="description_camera_0_rgb_1_ir">0:RGB, 1:IR</string>
+    <string name="description_image_quality_detect_enabled">启用图像质量检测</string>
+    <string name="description_image_quality_detect_disabled">不启用图像质量检测</string>
+    <string name="description_face_size_limit_enabled">启用人脸尺寸限制</string>
+    <string name="description_face_size_limit_disabled">不启用人脸尺寸限制</string>
+    <string name="description_face_size_move_enabled">启用人脸移动限制</string>
+    <string name="description_face_size_move_disabled">不启用人脸移动限制</string>
+
+    <!-- 配置的小标题 -->
+    <string name="settings_preview_adapt">相机预览设置</string>
+    <string name="settings_recognize_orient">识别角度设置</string>
+    <string name="settings_liveness">活体检测设置</string>
+    <string name="setting_recognize">识别设置</string>
+    <string name="face_attr_setting_threshold_recognize">人脸属性阈值设置</string>
+    <string name="settings_recognize_scale">人脸检测大小设置</string>
+    <string name="title_image_quality_detect">图像质量检测设置</string>
+    <string name="title_face_size_limit">识别时人脸大小限制</string>
+    <string name="title_face_move_limit">识别时人脸移动限制</string>
+    <string name="title_camera_preview_adapt">相机分辨率、角度等适配</string>
+
+    <!-- 配置 -->
+
+    <string name="ft_op_0">视频模式仅检测0度</string>
+    <string name="ft_op_90">视频模式仅检测90度</string>
+    <string name="ft_op_180">视频模式仅检测180度</string>
+    <string name="ft_op_270">视频模式仅检测270度</string>
+    <string name="ft_op_all">视频模式全方向人脸检测</string>
+
+    <string name="dialog_delete_face_config">确认删除 \'%s\' 的人脸？</string>
+    <string name="label_face_manage">人脸管理</string>
+
+    <!--人脸属性检测（图片） 界面-->
+    <string name="start_process">属性分析</string>
+    <string name="choose_local_image">选择本地图片</string>
+    <string name="processing">处理中</string>
+    <string name="app_permission_detail">
+        <b>隐私政策</b>
+        \n
+\n虹软（南京）多媒体技术有限公司及其关联公司（以下统称“我们”），一直以来都非常重视平台服务中用户个人信息的保护和隐私权保护。我们深知个人信息对您（指经有效注册申请并经认证通过后，在虹软视觉开放平台提交申请使用虹软南京提供的SDK下载服务的具有民事行为能力的个人、法人或其他组织）的重要性，我们会尽全力保护您的个人信息安全。您在浏览访问我们网站或注册登录使用我们任何产品和服务时，我们将按行业安全标准采取最为审慎的态度来保护您的个人信息。
+        \n
+\n<b>我们希望通过本《隐私政策》向您说明，在您使用我们的网站、产品和服务时，我们如何收集、使用、储存和共享这些信息，以及我们为您提供的访问、更新、控制和保护这些信息的方式及渠道。本隐私政策（“隐私政策”）仅适用于我们提供的各项产品和服务，包括但不仅限于网站、SDK、产品文档、Demo示例等，并不适用于第三方通过我们提供的产品和服务，或者我们网站上第三方链接所指向的产品和服务。因此特别提醒您认真阅读和了解第三方的隐私政策。访问我们网站或使用我们的服务，表示您已阅读、知悉和同意接受本隐私政策。本政策在您使用网站和产品/服务的过程中持续有效，若您不同意本政策，您应立即停止使用我们网站及产品/服务。</b>
+\n
+\n<b>该产品涉及的权限以及用途范围如下：</b>
+\n（1）READ_PHONE_STATE：读取设备IMEI、硬件序列号、Android ID、MAC地址与激活权限进行匹配。
+\n（2）CAMERA：获取摄像头使用权限以拍照进行人脸比对。
+\n（3）INTERNET：获取网络权限以便设备进行联网功能激活。
+\n（4）READ_EXTERNAL_STORAGE：获取设备读取权限，读取激活文件。
+\n（5）WRITE_EXTERNAL_STORAGE：获取设备存储权限，存储激活文件。
+\n
+\n<b>1、信息收集</b>
+\n1.1 我们接收并存储您在使用网站、产品和服务中提供的个人信息。
+\n个人信息指以电子或其他方式记录的能够单独或与其他信息结合识别特定自然人身份或反应特定自然人活动情况的各种信息。包括如下信息：
+\n①您在平台注册时需要提供用以创建账户的信息（姓名/公司名称、电子邮箱、手机号码和密码），及当您后续与我们联系并持续使用产品/服务时，我们可能会要求提供更多的联系信息，包括联系人通讯地址、电话号码、企业信息。
+\n②您在激活集成我们提供的SDK产品后收集的终端用户的个人信息（IMEI、硬件序列号、Android ID、MAC地址及用于人脸检测、人脸验证、人脸搜索的人脸信息）。为实现保护终端用户的个人信息，我们提供的存储模块将以加密形式将其发送至我们的服务器上，您可以在系统文件内查看和管理。
+\n<b>特别提醒：上述信息，我们仅用于您激活SDK产品，追溯终端用户个人信息泄露依据。若您利用我们的产品/服务从您的终端用户收集更多的个人信息，您应遵守法律法规在您的隐私政策对此进行披露和获得终端用户的授权。</b>
+\n1.2 第三方信息的来源与收集。
+\n我们可能从公开渠道来源收集关于您的信息（在法律允许的范围内），并可能将其与从您处收到的或与您有关的其他信息结合使用。如果我们将该等信息与从您处收到的个人信息结合使用，则在结合使用期间，该等信息将被视为个人信息。
+\n
+\n<b>2、信息使用</b>
+\n我们可能会在以下几个与业务相关的方面使用您在本服务中提供的或我们收集的信息，包括：
+\n② 改进虹软南京的产品和服务，并用于开发新的产品和服务；
+\n② 管理您的帐户，包括订阅的产品和服务时。除非事先获得您的授权或本声明另有规定外，不会将这些信息对外公开或向第三方提供（虹软南京关联公司除外）；
+\n③ 处理和回复您的问题和意见；
+\n④ 向您发送更新和实时信息；
+\n⑤ 为您提供您可能感兴趣的选定的产品和服务的信息；
+\n⑥ 征求你的信息和反馈时，包括通过调研和问卷调查等方式；
+\n⑦ 执行业务分析，或者是关于改善我们的业务质量、网站、SDK\API以及提供的服务等的其他用途；
+\n⑧ 帮助我们有效地管理网站内容，以预防我们的产品/服务不被滥用和追溯终端用户个人信息泄露依据，并提供软件认证或管理软件升级；
+\n⑨ 使用您的信息以预防、发现、调查欺诈、危害安全、非法或违反我们或关联公司协议、政策或规则的行为，以保护您、其他用户或我们及关联公司的合法权益；
+\n⑩ 对产品及服务的使用情况进行统计。同时，虹软南京及关联公司可能会对公众共享这些统计信息，以展示我们服务的整体使用趋势。这些统计信息不会包括您的任何身份识别信息；
+\n⑪ 其它为了让您有更好的体验、改善我们的服务或您同意的用途，在符合法律相关规定的前提下，我们可能将通过某一项服务所收集的信息，以汇集信息或者个性化的方式，用于我们的其他服务。
+        \n
+\n<b>3、信息披露</b>
+\n我们可能在以下几种限制情况下共享您的个人信息，包括：
+\n① 获得我们授权的以代表我们执行某些功能或提供某些服务的服务提供商（仅当我们确知该等服务提供商不会拥有和泄露您的个人信息时）；
+\n② 因行政机关要求，司法命令或其他法律程序，或建立或行使我们的法律权利或对法律索赔作出辩护；
+\n③ 当我们认为有必要对非法活动、涉嫌欺诈的活动、以及为法律索赔的辩护活动或法律要求的其他活动进行调查、预防、或采取行动时；
+\n④ 需要提供信息以保护或捍卫虹软南京及关联公司网站或他人的权利或财产以及公众安全时；
+\n⑤ 需要就一项公司交易（如剥离、并购、合并或资产出售）共享信息；
+\n⑥ 其它在得到您的同意时（例如，如果我们让订阅用户与其他用户共享他们已经购买的内容）。
+        \n
+\n<b>4、信息的访问渠道</b>
+\n您可以通过登录账号自行访问您的个人信息，法律法规规定的除外。您可以通过给我们发送邮件以更新、更改、或要求我们删除您的个人信息。
+        \n
+\n<b>5、信息安全</b>
+\n5.1 我们仅在您使用我们产品及服务期间和法律法规要求的时限内保留您的个人信息。
+\n在使用我们的服务进行信息发布时，您可能要向对方披露自己的个人信息，如联络方式或者邮政地址。请您妥善保护自己的个人信息，仅在有必要的情形下向他人提供。如您发现自己的个人信息泄密，尤其是账户及密码发生泄漏，请您立即联系我们以便采取相应措施。
+\n我们已采取了符合惯例的安全措施以保护您提供给我们的个人信息。然而，没有一种传输或存储电子数据的方法是完全安全的，我们无法保证该等信息永远不会以违反本隐私政策的方式被访问、使用或发布。
+\n在提供服务过程中，我们可能通过搜索技术、社交网络、公开数据库等方式获得公开的人脸信息，及通过您提交的数据获得非公开的人脸信息。我们郑重承诺，您直接提交给我们的任何非公开信息或数据都为您所私有，我们不会向任何第三方披露该等信息或将该等信息用于任何第三方。我们的任何应用中收集、提交的数据也只会用于该应用的自身用途，而不会为其他任何应用所访问和使用。我们欢迎应用开发者、您或任何第三方提出关于如何保护人脸信息的建议，以对应用开发者和最终用户的隐私进行严格保密。
+\n5.2 终端用户个人信息的授权同意
+\n您理解并同意，基于为您和/或您的终端用户提供身份认证服务目的，我们需要收集、保存并以匿名性和不可识别的方式使用本产品/服务所获得的来自于您集成产品终端用户的个人信息。因此，您接受我们《隐私政策》并把我们的SDK集成到您的产品中，则表示您确认并保证：
+\na) 您已向终端用户进行披露和说明，并已经获得终端用户充分必要的授权、同意和许可，允许我们为全面履行产品/服务目的收集、存储、处理、使用和共享终端用户的必要个人信息。若您的产品是针对不满十四周岁的儿童设计和开发的，您应已采取必要的技术措施，保证已获得其监护人的授权、同意和许可。
+\nb) 您已经遵守并将持续遵守适用的法律、法规、国家标准、行业标准和监管要求，包括但不限于制定、公布及更新有关个人信息保护和隐私保护的相关政策，且您承诺在使用我们产品/服务期间，您与终端用户间适用的《隐私政策》不低于已向我们提供的内容中所约定的个人信息保护和隐私保护标准。
+\nc) 您承诺上述授权、同意和许可均合法有效，不会与您与第三方所签署的任何协议或文件构成冲突或构成对第三方权利的侵犯。
+\nd) 您已经向终端用户提供易于操作的信息主体权利实现机制，且您应当告知您的终端用户可以通过集成产品的终端设备行使退出/注销权，一旦终端用户行使该权利，其信息将不会被以任何形式进行收集处理，也不会频繁征求用户同意。
+        \n
+\n<b>6、未成年人隐私</b>
+\n我们将根据适用法律保护未成年人的隐私。我们的产品和服务主要面向成年人，未满十四岁的未成年人应在监护人的监督和指导下访问我们的网站，在监护人的陪同下阅读本隐私政策并确认，在向我们提交任何个人信息之前应取得监护人的同意再使用我们的产品和服务。
+\n如果您的产品是针对未成年人或涉及未成年人而设计和开发的，请务必确保您采取必要的技术手段，保证终端用户的注册和使用由未成年人的监护人进行。同时您已制定充分的用户协议和隐私政策履行告知义务。对于经监护人同意而收集未成年人个人信息的情况，我们只会在收到法律允许、父母或监护人明确同意或者保护儿童所必要情况下使用或公开披露。
+        \n
+\n<b>7、隐私政策适用范围</b>
+\n7.1 除某些特定服务外，我们所有的产品/服务均适用本《隐私政策》。某些特定服务将适用特定的隐私政策。针对某些特定服务的特定隐私政策，将更具体地说明我们在该等服务中如何使用您的信息。该特定服务的隐私政策构成本《隐私政策》的一部分。如相关特定服务的隐私政策与本《隐私政策》有不一致之处，适用该特定服务的隐私政策。
+\n7.2 关联公司
+\n本隐私政策中提及的关联公司为虹软科技股份有限公司（简称虹软科技），虹软科技仅将获取的信息使用在内部产品研发、技术提升上，并适用本隐私政策。
+        \n
+\n<b>8、外部链接</b>
+\n我们的平台可能含有第三方网站、产品和服务的链接。这些第三方网站、产品和服务并不受本隐私政策规制，该等第三方收集的信息须遵守其隐私措施。我们建议您审阅该等第三方的隐私声明，以了解他们的个人信息的收集、使用和披露程序。
+        \n
+\n<b>9、隐私政策的变更</b>
+\n我们有权根据服务和产品的变化、适用法律和政策的调整随时调整本政策。未经您明确同意，我们不会削减您按照本隐私政策所应享有的权利。本隐私政策的任何更新将以标注更新时间的方式或放置醒目的通知方式在本网站上提示，请随时查看和了解您应遵守的隐私政策。如果您不同意接受更新的隐私政策，请立即停止访问和使用我们的服务。
+        \n
+\n<b>10、联系我们</b>
+\n如果您对我们的隐私政策有任何疑问，请通过电子邮箱联系我们。
+        \n
+</string>
+    <string name="original_preview_data">原始的图像数据\n（未旋转、镜像，仅缩放）</string>
+    <string name="adapted_preview_data">适配后的预览画面\n（可能经过旋转、镜像、缩放）</string>
+    <string name="rect_not_adapted_for_draw">未适配，直接使用的人脸框</string>
+    <string name="rect_adapted_for_draw">适配后被绘制的人脸框</string>
+</resources>

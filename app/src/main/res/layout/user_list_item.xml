@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/user_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/custom"
+        android:src="@mipmap/user"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/nameId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="@string/custom"
+        android:textAppearance="?android:attr/textAppearanceListItem"
+        android:textColor="#0277BD"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="@string/custom"
+        android:textAppearance="?android:attr/textAppearanceListItem"
+        android:textColor="#0277BD"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/departmentTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="@string/custom"
+        android:textAppearance="?android:attr/textAppearanceListItem"
+        android:textColor="#0277BD"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/phoneTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="@string/custom"
+        android:textAppearance="?android:attr/textAppearanceListItem"
+        android:textColor="#0277BD" />
+
+    <TextView
+        android:id="@+id/detailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="@string/detail"
+        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+        android:textColor="#0277BD"
+        android:textSize="18sp" />
+</LinearLayout>
