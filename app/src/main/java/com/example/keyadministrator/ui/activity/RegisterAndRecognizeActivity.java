@@ -90,7 +90,6 @@ public class RegisterAndRecognizeActivity extends BaseActivity implements ViewTr
     private boolean openRectInfoDraw;
     private SocketClient socketClient;
     private final SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault());
-    private int getCompareUserId = -1;
 
 
     @Override
@@ -295,12 +294,7 @@ public class RegisterAndRecognizeActivity extends BaseActivity implements ViewTr
                     User registeredUser;
                     long saveFaceId = (Long) faceIdAndImagePathArray[0];
                     String saveFacePath = (String) faceIdAndImagePathArray[1];
-                    if(getCompareUserId == -1) {
-                        // 增加新的人脸ID和图片地址
-                        registeredUser = dbHelper.getUserById(getUserId);
-                    }else{
-                        registeredUser = dbHelper.getUserById(getCompareUserId);
-                    }
+                    registeredUser = dbHelper.getUserById(getUserId);
                     registeredUser.setFaceId(String.valueOf(saveFaceId));
                     registeredUser.setImagePath(saveFacePath);
                     dbHelper.updateUser(registeredUser);
@@ -319,18 +313,17 @@ public class RegisterAndRecognizeActivity extends BaseActivity implements ViewTr
             String editRec = getIntent().getStringExtra("editRec");
             String globalImagePath = getIntent().getStringExtra("imagePath");
             int getUserId = getIntent().getIntExtra("userId", -1);
-            getCompareUserId = user.getId();
             int code = -1;
 
             // 根据识别情况不同跳转到不同界面，人脸登录后应该跳转到用户借用主界面
             if (Objects.equals(loginType, "FaceRectView") && !stringFaceValue.isEmpty()) {
                 try{
                     if (user.getEnabled() == 1) {
-                        if (user.getStartTime() != null && user.getEndTime() != null) {
+                        if (user.getStartTime() != null && !user.getStartTime().isEmpty() && user.getEndTime() != null && !user.getEndTime().isEmpty()) {
                             Date startDate = dateFormat.parse(user.getStartTime()); // 获取开始时间
                             Date endDate = dateFormat.parse(user.getEndTime());; // 获取结束时间
                             boolean isBetween = isCurrentTimeBetween(startDate, endDate);
-                            if (isBetween) {
+                            if (!isBetween) {
                                 code = user.isCk0();
                                 Intent intent = new Intent(this, UserLoginActivity.class);
                                 intent.putExtra("userId", user.getId());
@@ -686,6 +679,8 @@ public class RegisterAndRecognizeActivity extends BaseActivity implements ViewTr
                 queryFaceTask.execute(faceIdInt);
             }
         }
+        Button button2 = findViewById(R.id.register);
+        button2.setVisibility(View.GONE);
     }
 
     /**

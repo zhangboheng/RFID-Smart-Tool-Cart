@@ -330,7 +330,6 @@ public class UserDetailEditActivity extends Activity {
                 return; // 阻止保存操作
             }
         } catch (ParseException e) {
-            Toast.makeText(UserDetailEditActivity.this, "时间格式错误", Toast.LENGTH_SHORT).show();
             e.printStackTrace();
         }
         if (!CheckPhoneNumber.isPhone(phone)) {

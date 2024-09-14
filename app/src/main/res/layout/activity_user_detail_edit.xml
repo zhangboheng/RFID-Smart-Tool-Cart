@@ -3,12 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/black"
         android:orientation="vertical">
 
         <!-- 顶部通栏 -->
@@ -60,92 +61,190 @@
                 android:src="@mipmap/user"
                 tools:ignore="ImageContrastCheck" />
 
-            <EditText
-                android:id="@+id/nameEditText"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:autofillHints="name"
-                android:hint="@string/input_name"
-                android:inputType="text"
-                android:minHeight="48dp"
-                android:textColor="@color/white"
-                android:textColorHint="@color/colorSecondary"
-                tools:ignore="VisualLintTextFieldSize" />
+                android:orientation="horizontal">
 
-            <EditText
-                android:id="@+id/departmentEditText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:autofillHints="department"
-                android:hint="@string/input_part"
-                android:inputType="text"
-                android:minHeight="48dp"
-                android:textColor="@color/white"
-                android:textColorHint="@color/colorSecondary"
-                tools:ignore="VisualLintTextFieldSize" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="姓名："
+                    android:textSize="18dp"
+                    android:textColor="@color/colorSecondary" />
 
-            <EditText
-                android:id="@+id/phoneEditText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:autofillHints="phone"
-                android:hint="@string/input_phone"
-                android:inputType="phone"
-                android:minHeight="48dp"
-                android:textColor="@color/white"
-                android:textColorHint="@color/colorSecondary"
-                tools:ignore="VisualLintTextFieldSize" />
+                <EditText
+                    android:id="@+id/nameEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autofillHints="name"
+                    android:inputType="text"
+                    android:minHeight="48dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/colorSecondary" />
+            </LinearLayout>
 
-            <EditText
-                android:id="@+id/passwordEditText"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:autofillHints="password"
-                android:hint="@string/input_password"
-                android:inputType="textPassword"
-                android:minHeight="48dp"
-                android:textColor="@color/white"
-                android:textColorHint="@color/colorSecondary"
-                tools:ignore="VisualLintTextFieldSize" />
+                android:orientation="horizontal">
 
-            <EditText
-                android:id="@+id/cardIdEditText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:autofillHints=""
-                android:hint="@string/input_cardId"
-                android:inputType="textLongMessage"
-                android:minHeight="48dp"
-                android:textColor="@color/white"
-                android:textColorHint="@color/colorSecondary"
-                tools:ignore="VisualLintTextFieldSize" />
+                <TextView
+                    android:id="@+id/departmentTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="部门："
+                    android:textSize="18dp"
+                    android:textColor="@color/colorSecondary" />
 
-            <EditText
-                android:id="@+id/startTimeEditText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:focusable="false"
-                android:hint="@string/start_time"
-                android:minHeight="48dp"
-                android:textColor="@color/white"
-                android:textColorHint="@color/colorSecondary"
-                tools:ignore="VisualLintTextFieldSize" />
+                <EditText
+                    android:id="@+id/departmentEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autofillHints="department"
+                    android:inputType="text"
+                    android:minHeight="48dp"
+                    android:textColor="@color/white"
+                    android:labelFor="@+id/departmentTextView"
+                    android:textColorHint="@color/colorSecondary"
+                    tools:ignore="VisualLintTextFieldSize" />
+            </LinearLayout>
 
-            <EditText
-                android:id="@+id/endTimeEditText"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:focusable="false"
-                android:hint="@string/end_time"
-                android:minHeight="48dp"
-                android:textColor="@color/white"
-                android:textColorHint="@color/colorSecondary"
-                tools:ignore="VisualLintTextFieldSize" />
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="电话："
+                    android:textSize="18dp"
+                    android:textColor="@color/colorSecondary" />
+
+                <EditText
+                    android:id="@+id/phoneEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autofillHints="phone"
+                    android:hint=""
+                    android:inputType="phone"
+                    android:minHeight="48dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/colorSecondary"
+                    tools:ignore="VisualLintTextFieldSize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="密码："
+                    android:textSize="18dp"
+                    android:textColor="@color/colorSecondary" />
+
+                <EditText
+                    android:id="@+id/passwordEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autofillHints="password"
+                    android:hint=""
+                    android:inputType="textPassword"
+                    android:minHeight="48dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/colorSecondary"
+                    tools:ignore="VisualLintTextFieldSize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="卡号："
+                    android:textSize="18dp"
+                    android:textColor="@color/colorSecondary" />
+
+                <EditText
+                    android:id="@+id/cardIdEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autofillHints=""
+                    android:hint=""
+                    android:inputType="textLongMessage"
+                    android:minHeight="48dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/colorSecondary"
+                    tools:ignore="VisualLintTextFieldSize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="禁用开始时间："
+                    android:textSize="18dp"
+                    android:textColor="@color/colorSecondary" />
+
+                <EditText
+                    android:id="@+id/startTimeEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:hint=""
+                    android:minHeight="48dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/colorSecondary"
+                    tools:ignore="VisualLintTextFieldSize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="禁用结束时间："
+                    android:textSize="18dp"
+                    android:textColor="@color/colorSecondary" />
+
+                <EditText
+                    android:id="@+id/endTimeEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:hint=""
+                    android:minHeight="48dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/colorSecondary"
+                    tools:ignore="VisualLintTextFieldSize" />
+            </LinearLayout>
 
             <com.google.android.material.switchmaterial.SwitchMaterial
                 android:id="@+id/enabledSwitch"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textSize="18dp"
                 android:text="@string/if_enabled"
                 android:textColor="@color/colorSecondary"
                 app:thumbTint="@color/purple_500"
@@ -163,6 +262,7 @@
                     android:layout_marginTop="6dp"
                     android:gravity="center_vertical"
                     android:text="@string/cabinet_right"
+                    android:textSize="18dp"
                     android:textColor="@color/colorSecondary" />
 
                 <LinearLayout

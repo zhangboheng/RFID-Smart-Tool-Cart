@@ -60,11 +60,11 @@ public class LoginActivity extends AppCompatActivity {
                 User user = dbHelper.getUserByUsernameAndPassword(username, hashedPassword);
                     if ((boolean) validateLogin(username, hashedPassword,0)) {
                         if (user.getEnabled() == 1) {
-                            if (user.getStartTime() != null && user.getEndTime() != null) {
+                            if (user.getStartTime() != null && !user.getStartTime().isEmpty() && user.getEndTime() != null && !user.getEndTime().isEmpty()) {
                                 Date startDate = dateFormat.parse(user.getStartTime()); // 获取开始时间
                                 Date endDate = dateFormat.parse(user.getEndTime());; // 获取结束时间
                                 boolean isBetween = isCurrentTimeBetween(startDate, endDate);
-                                if (isBetween) {
+                                if (!isBetween) {
                                     int code = user.isCk0();
                                     Intent intent;
                                     intent = new Intent(LoginActivity.this, UserLoginActivity.class);

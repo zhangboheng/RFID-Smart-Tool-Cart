@@ -86,7 +86,7 @@ public class CardLoginActivity extends AppCompatActivity {
 
         if (user != null) {
             if (user.getEnabled() == 1) {
-                if (user.getStartTime() != null && user.getEndTime() != null) {
+                if (user.getStartTime() != null && !user.getStartTime().isEmpty() && user.getEndTime() != null && !user.getEndTime().isEmpty()) {
                     Date startDate = dateFormat.parse(user.getStartTime()); // 获取开始时间
                     Date endDate = dateFormat.parse(user.getEndTime());; // 获取结束时间
                     boolean isBetween = isCurrentTimeBetween(startDate, endDate);
@@ -123,7 +123,7 @@ public class CardLoginActivity extends AppCompatActivity {
 
     private boolean isCurrentTimeBetween(Date startDate, Date endDate) {
         Date currentTime = new Date();
-        return currentTime.after(startDate) && currentTime.before(endDate);
+        return currentTime.before(startDate) && currentTime.after(endDate);
     }
 
     @Override
