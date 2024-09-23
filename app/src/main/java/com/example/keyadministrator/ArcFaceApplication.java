@@ -6,8 +6,6 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.PrintWriter;
 
-import xcrash.XCrash;
-
 public class ArcFaceApplication extends Application {
     private static ArcFaceApplication application;
 
@@ -15,23 +13,8 @@ public class ArcFaceApplication extends Application {
     public void onCreate() {
         super.onCreate();
         application = this;
-        initCrashDumper();
-
         // 设置全局异常处理
         Thread.setDefaultUncaughtExceptionHandler(new GlobalExceptionHandler());
-    }
-
-    private void initCrashDumper() {
-        XCrash.InitParameters initParameters = new XCrash.InitParameters();
-        File dir = new File(DebugInfoDumper.CRASH_LOG_DIR);
-        if (dir.isFile()){
-            dir.delete();
-        }
-        if (!dir.exists()){
-            dir.mkdirs();
-        }
-        initParameters.setLogDir(DebugInfoDumper.CRASH_LOG_DIR);
-        XCrash.init(application, initParameters);
     }
 
     @Override
