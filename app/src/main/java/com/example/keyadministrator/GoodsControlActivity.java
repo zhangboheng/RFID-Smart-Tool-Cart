@@ -185,7 +185,7 @@ public class GoodsControlActivity extends AppCompatActivity implements GoodsAdap
     private void readCSV(Uri uri) {
         List<Good> all_goods = new ArrayList<>();
         try (InputStream inputStream = getContentResolver().openInputStream(uri);
-             BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream, "GBK"))) {
+             BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream, StandardCharsets.UTF_8))) {
             String line;
             int lineCount = 0;
             while ((line = reader.readLine()) != null) {

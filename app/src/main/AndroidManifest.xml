@@ -215,10 +215,6 @@
         </activity>
         <!-- 关于我们 -->
         <activity android:name=".AboutUsActivity" />
-        <activity
-            android:name=".BlueActivity"
-            android:exported="true">
-        </activity>
     </application>
     <queries>
         <intent>
